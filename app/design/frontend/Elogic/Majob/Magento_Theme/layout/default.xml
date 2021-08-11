@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/myLogo.svg</argument>
+                <argument name="logo_alt" xsi:type="string">logo</argument>
+                <argument name="logo_width" xsi:type="number">110</argument>
+                <argument name="logo_height" xsi:type="number">95</argument>
+            </arguments>
+        </referenceBlock>
+
+        <referenceContainer name="header.panel">
+            <block class="Magento\Framework\View\Element\Template" name="top" template="Magento_Theme::header.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="img" template="Magento_Theme::image.phtml"/>
+            <referenceBlock name="panel.wrapper" remove="false"/>
+            <referenceBlock name="panel.header" remove="false"/>
+            <referenceBlock name="header.links" remove="false"/>
+            <referenceBlock name="top.search" remove="true"/>
+        </referenceContainer>
+
+        <referenceContainer name="header-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="header_content"
+                   template="Magento_Theme::header_content.phtml"/>
+        </referenceContainer>
+
+        <referenceBlock name="form.subscribe" remove="true"/>
+        <referenceBlock name="footer" remove="false"/>
+
+        <referenceContainer name="footer-container">
+            <block class="Magento\Framework\View\Element\Template" name="footer_content"
+                   template="Magento_Theme::footer.phtml"/>
+        </referenceContainer>
+
+        <referenceBlock name="footer_links" remove="true"/>
+        <referenceBlock name="copyright" remove="true"/>
+
+    </body>
+</page>

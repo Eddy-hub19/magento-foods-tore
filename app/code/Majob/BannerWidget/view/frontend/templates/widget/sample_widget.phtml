@@ -1,0 +1,16 @@
+<?php
+/**@var  $block Majob\BannerWidget\Block\Widget\Samplewidget */
+?>
+<?php //if ($block->getTitle()): ?>
+<!---->
+<!--    <h1 class='name-title'>--><? //= $block->getTitle(); ?><!--</h1>-->
+<?php //endif; ?>
+
+<section class="banner">
+    <img class="bl-img-bg" src="<?= $block->getPhoto(); ?>" alt="banner">
+    <div class="details">
+        <h1 class='majob-title'><?= $block->getTitle(); ?></h1>
+        <h2 class='majob-content'><?= $block->getContent(); ?></h2>
+        <button>Browse bands</button>
+    </div>
+</section>

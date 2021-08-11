@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+        <!--        Why Choose the Premium Bakery Quality    page.bottom.container  -->
+        <referenceContainer name="page.bottom.container">
+            <block class="Magento\Framework\View\Element\Template" name="page_content"
+                   template="Magento_Theme::page.phtml" after="main"/>
+        </referenceContainer>
+
+        <!--        MAIN.CONTAINER-->
+
+        <referenceContainer name="page.bottom.container">
+            <container name="custom.container" as="CustomContainer" label="Custom Container" htmlTag="div"
+                       htmlClass="custom-container">
+                <block class="Magento\Framework\View\Element\Template" name="main-container"
+                       template="Magento_Theme::main_container.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="custom"
+                       template="Magento_Theme::custom_container.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="some-container"
+                       template="Magento_Theme::inf_sections.phtml" after="page.footer">
+                </block>
+                <block class="Magento\Framework\View\Element\Template" name="slider"
+                       template="Magento_Theme::slider.phtml"/>
+                <block class="Magento\Framework\View\Element\Template" name="tell-friend"
+                       template="Magento_Theme::tell_friend.phtml"/>
+            </container>
+        </referenceContainer>
+
+    </body>
+</page>

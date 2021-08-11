@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Majob\BannerWidget\Block\Widget\Samplewidget" id="Majob_Banner">
+        <label>Majob Sample Widget</label>
+        <description>blog Widget in Magento2</description>
+        <parameters>
+            <parameter name="widget_title" sort_order="10" visible="true" xsi:type="text">
+                <label>Title</label>
+            </parameter>
+            <parameter name="widget_content" sort_order="20" visible="true" xsi:type="text">
+                <label>Content</label>
+            </parameter>
+
+            <parameter name="photo" xsi:type="block" visible="true" sort_order="10">
+                <label translate="true">Photo</label>
+                <description translate="true">Contact photo</description>
+                <block class="Majob\BannerWidget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
