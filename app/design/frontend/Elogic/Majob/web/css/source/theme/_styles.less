@@ -142,7 +142,7 @@ body {
 
 .block.widget .products-grid .product-item .product-item-inner, .page-layout-1column .block.widget .products-grid .product-item .product-item-inner, .page-layout-3columns .block.widget .products-grid .product-item .product-item-inner {
     position: relative;
-    top: 0;
+    top: -18px;
     border: none;
     box-shadow: none;
     width: auto;
@@ -171,8 +171,9 @@ body {
 .products-grid .product-item-actions {
     margin: 0;
     padding: 0;
-    width: 100px;
+    width: 200px;
     height: 32px;
+    background: #ff8126;
 }
 
 article, aside, details, figcaption, figure, main, footer, header, nav, section, summary {
@@ -182,8 +183,10 @@ article, aside, details, figcaption, figure, main, footer, header, nav, section,
 
 .product-item .tocart {
     border: none;
-    width: auto;
-    height: auto;
+    width: 201px;
+    text-align: center;
+    height: 32px;
+    margin-left: 0;
     box-shadow: none;
     background: #ff8126;
 }
@@ -214,20 +217,61 @@ article, aside, details, figcaption, figure, main, footer, header, nav, section,
 
 .product-item-name {
     display: flex;
-    margin: 15px 0px;
+    margin-bottom: 35px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 27px;
+    text-align: center;
+    color: #1f1f1f;
 }
 
-//
+.product-item .price-box .price {
+    font-size: 24px;
+}
 
 .price-box price-final_price {
     background: red;
+    width: 50px;
+    height: 50px;
+    text-decoration: line-through;
+}
+
+//.minicart-items .product-item-details {
+//    display: flex;
+//    padding: 35px 0 0px 111px;
+//    justify-content: center;
+//    align-items: center;
+//    align-content: space-between;
+//    flex-wrap: wrap;
+//    flex-direction: row;
+//}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -30px;
+}
+
+.cost_color {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
     color: orange;
 }
 
-//.product-item .price-box:before {
-//    content: '$17.99';
-//    color: orange;
-//    text-decoration: line-through;
-//    font-size: 20px;
-//    bold
-//}
+.cost_color:before{
+    content: '$';
+}
+
+
+.line_through {
+    margin-left: 10px;
+    color: gray;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-decoration: line-through;
+}
