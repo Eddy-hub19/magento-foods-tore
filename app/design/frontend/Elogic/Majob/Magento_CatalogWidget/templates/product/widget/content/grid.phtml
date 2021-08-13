@@ -58,7 +58,7 @@ use Magento\Framework\App\Action\Action;
                                 <?php if ($templateType) : ?>
                                     <?= $block->getReviewsSummaryHtml($_item, $templateType) ?>
                                 <?php endif; ?>
-                                <div class="price ">
+                                <div class="price">
                                     <span class="cost_color">$<?= round($_item->getPrice(), 2); ?></span>
                                     <span class="line_through">$<?= round($_item->getSpecialPrice(), 2); ?></span>
                                 </div>

@@ -154,7 +154,7 @@ body {
     width: 334px;
     overflow: visible;
     height: 342px;
-    border-radius: 82px;
+    //border-radius: 82px;
 }
 
 .block.widget .products-grid .product-item .product-item-inner, .page-layout-1column .block.widget .products-grid .product-item .product-item-inner, .page-layout-3columns .block.widget .products-grid .product-item .product-item-inner {
@@ -267,7 +267,7 @@ article, aside, details, figcaption, figure, main, footer, header, nav, section,
     width: 270px;
 }
 
-.price {
+.product-item-details > .price {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -297,6 +297,56 @@ article, aside, details, figcaption, figure, main, footer, header, nav, section,
     font-size: 36px;
     position: inherit;
     line-height: 36px;
+}
+
+.products-list .product-image-wrapper .product-image-photo, .cart.table-wrapper .product-image-wrapper .product-image-photo, .minicart-items .product-image-wrapper .product-image-photo, .block-giftregistry-shared-items .product-image-wrapper .product-image-photo {
+    margin-left: 21px;
+}
+
+.minicart-items .product-item-details .price-including-tax, .minicart-items .product-item-details .price-excluding-tax {
+    margin: -22px 11px;
+}
+
+.minicart-items .item-qty {
+    text-align: center;
+    width: 60px;
+    position: relative;
+    top: 46px;
+}
+
+.minicart-items .product-item-details .details-qty {
+    margin-top: -2px;
+    position: relative;
+    top: 0px;
+}
+
+.minicart-items .product-item-pricing .label {
+    display: inline-block;
+    position: relative;
+    top: 43px;
+}
+
+.minicart-items .product-item-name a {
+    position: absolute;
+    top: 114px;
+}
+
+.minicart-items .product-item-details {
+    display: flex;
+    padding: 185px 0 0px 111px;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.minicart-items .update-cart-item {
+    font-size: 1.1rem;
+    margin-left: 5px;
+    position: relative;
+    top: 45px;
+    vertical-align: top;
 }
 
 //
