@@ -16,7 +16,7 @@ define([
         _slider: function () {
             let self = this;
             $(self.options.wrapper).slick({
-                dots: true,
+                dots: false,
                 customPaging: function (slider, i) {
                     return '<span class="button page-indicator"></span>';
                 },
@@ -40,7 +40,7 @@ define([
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 1,
-                            arrows: false
+                            arrows: true
                         }
                     },
                     {
@@ -48,7 +48,7 @@ define([
                         settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1,
-                            arrows: false
+                            arrows: true
                         }
                     }
                 ]

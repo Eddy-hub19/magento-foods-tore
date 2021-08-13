@@ -20,7 +20,7 @@
     }
 
     h2 {
-        font-family:  'Poppins';
+        font-family: 'Poppins';
         font-weight: 300;
         font-size: 26px;
         line-height: 39px;
@@ -34,7 +34,7 @@
         border-radius: 5px;
         color: white;
         border: none;
-        font-family:  'Poppins';
+        font-family: 'Poppins';
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
@@ -113,7 +113,7 @@
     }
 
     p {
-        font-family:  'Poppins';
+        font-family: 'Poppins';
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
@@ -141,7 +141,7 @@
 }
 
 .list li {
-    font-family:  'Poppins';
+    font-family: 'Poppins';
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -197,7 +197,7 @@
         border-radius: 5px;
         border: none;
         margin-bottom: 60px;
-        font-family:  'Poppins';
+        font-family: 'Poppins';
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
@@ -287,24 +287,73 @@
 .slick-slider {
     display: flex;
     justify-content: center;
-    width: 1000px;
+    width: 1300px;
     min-width: 0;
 }
 
-.slick-arrow {
-
+.slick-prev{
+    display: block;
+    position: relative;
+    top: 80px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background: url('@{baseDir}images/arrow-left.svg') no-repeat;
 }
 
-slick-prev slick-arrow {
-    width: 50px;
-    height: 50px;
+.slick-next{
+    display: block;
+    position: relative;
+    top: 80px;
+    left: 8px;
+    width: 100px;
+    height: 100px;
     border: none;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
-    background: url('@{baseDir}images/arrow-left.svg') black;
+    background: url('@{baseDir}images/arrow-right.svg') no-repeat;
+}
+
+.slick-next:hover, slick-next:focus{
+    display: block;
+    position: relative;
+    top: 80px;
+    left: 8px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background: url('@{baseDir}images/arrow-right.svg') no-repeat;
+}
+
+.slick-prev:hover, .slick-next:hover, .slick-prev:focus, .slick-next:focus{
+    display: block;
+    position: relative;
+    top: 80px;
+    left: 8px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background: url('@{baseDir}images/arrow-right.svg') no-repeat;
+}
+
+.slick-prev:hover, .slick-prev:focus{
+    display: block;
+    position: relative;
+    top: 80px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background: url('@{baseDir}images/arrow-left.svg') no-repeat;
 }
 
 .carousel {
@@ -322,7 +371,7 @@ slick-prev slick-arrow {
     height: 186px;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    padding: 15px;
+    padding: 10px;
     margin: 20px;
 
     li {
@@ -361,7 +410,7 @@ slick-prev slick-arrow {
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
-        font-family:  'Poppins';
+        font-family: 'Poppins';
         color: #1f1f1f;
         margin: 40px 0 20px 0;
         flex-wrap: wrap;
@@ -373,7 +422,7 @@ slick-prev slick-arrow {
         height: 45px;
         background: #ff8126;
         border-radius: 5px;
-        font-family:  'Poppins';
+        font-family: 'Poppins';
         font-weight: 600;
         font-size: 18px;
         line-height: 27px;
