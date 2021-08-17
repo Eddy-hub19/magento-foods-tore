@@ -2,15 +2,13 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-
-        <!--        Why Choose the Premium Bakery Quality    page.bottom.container  -->
+        <!-- Why Choose the Premium Bakery Quality -->
         <referenceContainer name="page.bottom.container">
             <block class="Magento\Framework\View\Element\Template" name="page_content"
                    template="Magento_Theme::page.phtml" after="main"/>
         </referenceContainer>
 
-        <!--        MAIN.CONTAINER-->
-
+        <!--MAIN.CONTAINER-->
         <referenceContainer name="page.bottom.container">
             <container name="custom.container" as="CustomContainer" label="Custom Container" htmlTag="div"
                        htmlClass="custom-container">
@@ -27,6 +25,5 @@
                        template="Magento_Theme::tell_friend.phtml"/>
             </container>
         </referenceContainer>
-
     </body>
 </page>

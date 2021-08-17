@@ -1,13 +1,9 @@
 <?xml version="1.0" ?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <link src="Magento_Theme::web/js/script.js"/>
     </head>
-
     <body>
-
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_file" xsi:type="string">images/myLogo.svg</argument>
@@ -16,8 +12,6 @@
                 <argument name="logo_height" xsi:type="number">95</argument>
             </arguments>
         </referenceBlock>
-
-
 
         <referenceContainer name="header.panel">
             <block class="Magento\Framework\View\Element\Template" name="top" template="Magento_Theme::header.phtml"/>
