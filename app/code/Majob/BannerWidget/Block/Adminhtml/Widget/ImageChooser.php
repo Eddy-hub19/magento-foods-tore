@@ -2,13 +2,14 @@
 
 namespace Majob\BannerWidget\Block\Adminhtml\Widget;
 
+use Magento\Backend\Block\Template;
 use Magento\Backend\Block\Template\Context;
 use Magento\Backend\Block\Widget\Button;
 use Magento\Framework\Data\Form\Element\AbstractElement;
 use Magento\Framework\Data\Form\Element\Factory;
 use Magento\Framework\Data\Form\Element\Text;
 
-class ImageChooser extends \Magento\Backend\Block\Template
+class ImageChooser extends Template
 {
     /**
      * @var Factory

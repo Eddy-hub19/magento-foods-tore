@@ -2,11 +2,11 @@
     body {
         width: 100%;
         margin: 0 auto;
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
     }
 }
 
-//Desktop L
+//Desktop
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
     .header.content {
         display: flex;
@@ -17,7 +17,7 @@
     }
 
     .message {
-        font-weight: bold;
+        font-weight: @weight-bold;
         font-size: 15px;
         line-height: 10px;
         text-align: center;
@@ -154,7 +154,7 @@
         left: 45px;
         top: 10px;
         text-align: center;
-        background: #ff8126;
+        background: @primary-color;
         border-radius: 50%;
         font-weight: 500;
         font-size: 9px;
@@ -176,15 +176,15 @@
             top: 125px;
 
             h1 {
-                font-family: 'Cormorant', sans-serif;
-                font-weight: bold;
+                font-family: @cormorant;
+                font-weight: @weight-bold;
                 font-size: 50px;
                 line-height: 61px;
                 color: #1f1f1f;
             }
 
             h2 {
-                font-family: 'Poppins', serif;
+                font-family: @poppins;
                 font-weight: 300;
                 font-size: 26px;
                 line-height: 39px;
@@ -194,11 +194,11 @@
             button {
                 width: 200px;
                 height: 45px;
-                background: #ff8126;
+                background: @primary-color;
                 border-radius: 5px;
                 color: white;
                 border: none;
-                font-family: 'Poppins';
+                font-family: @poppins;
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 27px;
@@ -230,13 +230,13 @@
         margin: 40px auto;
 
         b {
-            color: #ff8126;
+            color: @primary-color;
         }
 
         h2 {
             margin: 40px 0 80px 0;
-            font-family: 'Cormorant', sans-serif;
-            font-weight: bold;
+            font-family: @cormorant;
+            font-weight: @weight-bold;
             font-size: 40px;
             line-height: 48px;
             text-align: center;
@@ -270,15 +270,15 @@
         margin: 0 40px 10px 0;
 
         h3 {
-            font-family: 'Cormorant', sans-serif;
-            font-weight: bold;
+            font-family: @cormorant;
+            font-weight: @weight-bold;
             font-size: 40px;
             line-height: 48px;
-            color: #ff8126;
+            color: @primary-color;
         }
 
         p {
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
@@ -293,7 +293,7 @@
         button {
             width: 270px;
             height: 45px;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 5px;
             color: white;
             border: none;
@@ -306,8 +306,8 @@
     }
 
     .list li {
-        font-family: 'Poppins', serif;
-        font-weight: bold;
+        font-family: @poppins;
+        font-weight: @weight-bold;
         font-size: 16px;
         line-height: 24px;
         color: #1f1f1f;
@@ -319,7 +319,7 @@
     .left > .list li:before {
         content: '\2714';
         padding: 7px 10px;
-        background: #ff8126;
+        background: @primary-color;
         border-radius: 50%;
         color: white;
         margin-right: 12px;
@@ -346,8 +346,8 @@
         margin-top: 80px;
 
         h2 {
-            font-family: 'Cormorant', sans-serif;
-            font-weight: bold;
+            font-family: @cormorant;
+            font-weight: @weight-bold;
             font-size: 40px;
             line-height: 48px;
             text-align: center;
@@ -358,11 +358,11 @@
         button {
             width: 330px;
             height: 45px;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 5px;
             border: none;
             margin-bottom: 60px;
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: 500;
             font-size: 18px;
             line-height: 27px;
@@ -390,25 +390,25 @@
         margin: 80px 0 80px 0;
 
         a {
-            font-family: 'Cormorant', sans-serif;
-            font-weight: bold;
+            font-family: @cormorant;
+            font-weight: @weight-bold;
             font-size: 40px;
             line-height: 48px;
             text-align: center;
             text-decoration-line: underline;
-            color: #ff8126;
+            color: @primary-color;
         }
 
         h2 {
-            font-family: 'Cormorant', sans-serif;
-            font-weight: bold;
+            font-family: @cormorant;
+            font-weight: @weight-bold;
             font-size: 40px;
             line-height: 48px;
         }
 
         i {
-            font-family: 'Cormorant', sans-serif;
-            font-weight: bold;
+            font-family: @cormorant;
+            font-weight: @weight-bold;
             font-size: 40px;
             line-height: 48px;
             text-decoration: none;
@@ -556,26 +556,26 @@
         }
 
         h2 {
-            font-family: 'Cormorant', sans-serif;
-            font-weight: bold;
+            font-family: @cormorant;
+            font-weight: @weight-bold;
             font-size: 40px;
             line-height: 48px;
             color: #1f1f1f;
         }
 
         h3 {
-            font-family: 'Cormorant', sans-serif;
-            font-weight: bold;
+            font-family: @cormorant;
+            font-weight: @weight-bold;
             font-size: 40px;
             line-height: 48px;
-            color: #ff8126;
+            color: @primary-color;
         }
 
         p {
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             color: #1f1f1f;
             margin: 40px 0 20px 0;
             flex-wrap: wrap;
@@ -585,9 +585,9 @@
         button {
             width: 140px;
             height: 45px;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 5px;
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: 600;
             font-size: 18px;
             line-height: 27px;
@@ -598,8 +598,8 @@
 
         pre {
             color: black;
-            font-family: 'Cormorant', sans-serif;
-            font-weight: bold;
+            font-family: @cormorant;
+            font-weight: @weight-bold;
             font-size: 40px;
             line-height: 48px;
             border: none;
@@ -633,8 +633,8 @@
         }
 
         h4 {
-            font-family: 'Cormorant', sans-serif;
-            font-weight: bold;
+            font-family: @cormorant;
+            font-weight: @weight-bold;
             font-size: 40px;
             line-height: 48px;
             text-align: center;
@@ -832,7 +832,7 @@
         font-size: 33px;
         line-height: 40px;
         vertical-align: middle;
-        font-weight: bold;
+        font-weight: @weight-bold;
         margin-bottom: 18px;
         position: relative;
         left: 20px;
@@ -882,7 +882,7 @@
         padding: 0;
         width: 200px;
         height: 32px;
-        background: #ff8126;
+        background: @primary-color;
     }
 
     article, aside, details, figcaption, figure, main, footer, header, nav, section, summary {
@@ -897,7 +897,7 @@
         height: 32px;
         margin-left: 0;
         box-shadow: none;
-        background: #ff8126;
+        background: @primary-color;
     }
 
     .columns:after {
@@ -926,7 +926,7 @@
     .product-item-name {
         display: flex;
         margin-bottom: 50px;
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
         font-weight: 500;
         font-size: 21px;
         line-height: 27px;
@@ -967,7 +967,7 @@
 
     .cost_color {
         display: inline-block;
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
         font-weight: 600;
         font-size: 24px;
         line-height: 36px;
@@ -980,7 +980,7 @@
         color: gray;
         line-height: 36px;
         font-weight: 600;
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
         text-decoration: line-through;
     }
 
@@ -1041,7 +1041,7 @@
     }
 }
 
-//Header Tablet
+//Tablet
 & when (@media-target = 'desktop'), (@media-target = 'all') {
     @media only screen and (min-width: @screen__m) and (max-width: (@screen__l - 1)) {
         .page-wrapper {
@@ -1057,7 +1057,7 @@
         }
 
         .message {
-            font-weight: bold;
+            font-weight: @weight-bold;
             font-size: 14px;
             line-height: 21px;
             text-align: center;
@@ -1194,7 +1194,7 @@
             left: 45px;
             top: 1px;
             text-align: center;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 50%;
             font-weight: 500;
             font-size: 9px;
@@ -1238,7 +1238,7 @@
     }
 
     .message {
-        font-weight: bold;
+        font-weight: @weight-bold;
         font-size: 8px;
         line-height: 21px;
         text-align: center;
@@ -1362,7 +1362,7 @@
         left: 45px;
         top: 1px;
         text-align: center;
-        background: #ff8126;
+        background: @primary-color;
         border-radius: 50%;
         font-weight: 500;
         font-size: 9px;
@@ -1458,5 +1458,4 @@
         width: 100%;
         padding: 25px 0;
     }
-
 }

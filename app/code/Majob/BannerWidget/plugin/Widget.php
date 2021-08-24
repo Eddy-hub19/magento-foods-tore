@@ -22,10 +22,11 @@ class Widget
     }
 
     public function beforeGetWidgetDeclaration(
-        \Magento\Widget\Model\Widget $subject,
-                                     $type,
-                                     $params = [],
-                                     $asIs = true
+        \Magento\Widget\Model\Widget
+        $subject,
+        $type,
+        $params = [],
+        $asIs = true
     )
     {
         foreach ($params as $name => $value) {

@@ -2,7 +2,7 @@
     body {
         width: 100%;
         margin: 0 auto;
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
     }
 }
 
@@ -20,7 +20,7 @@
         }
 
         h1 {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 50px;
             line-height: 61px;
@@ -28,7 +28,7 @@
         }
 
         h2 {
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: 300;
             font-size: 26px;
             line-height: 39px;
@@ -38,11 +38,11 @@
         button {
             width: 200px;
             height: 45px;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 5px;
             color: white;
-            border: none;
-            font-family: 'Poppins', serif;
+            border: @border-none;
+            font-family: @poppins;
             font-weight: 500;
             font-size: 18px;
             line-height: 27px;
@@ -73,12 +73,12 @@
         margin: 40px auto;
 
         b {
-            color: #ff8126;
+            color: @primary-color;
         }
 
         h2 {
             margin: 40px 0 80px 0;
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
@@ -113,15 +113,15 @@
         margin: 0 40px 10px 0;
 
         h3 {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
-            color: #ff8126;
+            color: @primary-color;
         }
 
         p {
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
@@ -136,10 +136,10 @@
         button {
             width: 270px;
             height: 45px;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 5px;
             color: white;
-            border: none;
+            border: @border-none;
             margin-top: 30px;
             font-family: "Popins";
             font-weight: 500;
@@ -149,7 +149,7 @@
     }
 
     .list li {
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
         font-weight: bold;
         font-size: 16px;
         line-height: 24px;
@@ -162,7 +162,7 @@
     .left > .list li:before {
         content: '\2714';
         padding: 7px 10px;
-        background: #ff8126;
+        background: @primary-color;
         border-radius: 50%;
         color: white;
         margin-right: 12px;
@@ -189,7 +189,7 @@
         margin-top: 80px;
 
         h2 {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
@@ -201,11 +201,11 @@
         button {
             width: 330px;
             height: 45px;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 5px;
-            border: none;
+            border: @border-none;
             margin-bottom: 60px;
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: 500;
             font-size: 18px;
             line-height: 27px;
@@ -233,28 +233,28 @@
         margin: 80px 0 80px 0;
 
         a {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
             text-align: center;
             text-decoration-line: underline;
-            color: #ff8126;
+            color: @primary-color;
         }
 
         h2 {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
         }
 
         i {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
-            text-decoration: none;
+            text-decoration: @border-none;
             color: black;
         }
     }
@@ -306,7 +306,7 @@
         left: 30px;
         width: 100px;
         height: 100px;
-        border: none;
+        border: @border-none;
         font-size: 25px;
         cursor: pointer;
         background: url('@{baseDir}images/arrow-left.svg') no-repeat;
@@ -319,7 +319,7 @@
         left: 8px;
         width: 100px;
         height: 100px;
-        border: none;
+        border: @border-none;
         font-size: 25px;
         cursor: pointer;
         background: url('@{baseDir}images/arrow-right.svg') no-repeat;
@@ -332,7 +332,7 @@
         left: 8px;
         width: 100px;
         height: 100px;
-        border: none;
+        border: @border-none;
         font-size: 25px;
         cursor: pointer;
         background: url('@{baseDir}images/arrow-right.svg') no-repeat;
@@ -345,7 +345,7 @@
         left: 8px;
         width: 100px;
         height: 100px;
-        border: none;
+        border: @border-none;
         font-size: 25px;
         cursor: pointer;
         background: url('@{baseDir}images/arrow-right.svg') no-repeat;
@@ -358,7 +358,7 @@
         left: 30px;
         width: 100px;
         height: 100px;
-        border: none;
+        border: @border-none;
         font-size: 25px;
         cursor: pointer;
         background: url('@{baseDir}images/arrow-left.svg') no-repeat;
@@ -399,7 +399,7 @@
         }
 
         h2 {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
@@ -407,18 +407,18 @@
         }
 
         h3 {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
-            color: #ff8126;
+            color: @primary-color;
         }
 
         p {
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             color: #1f1f1f;
             margin: 40px 0 20px 0;
             flex-wrap: wrap;
@@ -428,24 +428,24 @@
         button {
             width: 140px;
             height: 45px;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 5px;
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: 600;
             font-size: 18px;
             line-height: 27px;
             color: white;
-            border: none;
+            border: @border-none;
             margin-top: 30px;
         }
 
         pre {
             color: black;
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
-            border: none;
+            border: @border-none;
             background: none;
         }
     }
@@ -476,7 +476,7 @@
         }
 
         h4 {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 40px;
             line-height: 48px;
@@ -551,7 +551,7 @@
     .abs-margin-for-blocks-and-widgets-desktop, .page-main .block, .customer-review .product-details {
         display: block;
         margin: 120px 0 50px 0;
-        border: none;
+        border: @border-none;
     }
 
     .abs-visually-hidden-desktop-s, .products-grid .product-item-info:not(:hover):not(.active) .product-item-inner {
@@ -602,7 +602,7 @@
         width: 270px;
         border-radius: 20px;
         max-width: none;
-        border: none;
+        border: @border-none;
         margin: 0;
         padding: 0;
         clip-path: none;
@@ -612,7 +612,7 @@
 
 
     .products-grid .product-item-info:hover {
-        border: none;
+        border: @border-none;
         clip-path: none;
         display: block;
         position: relative;
@@ -646,7 +646,7 @@
     .block.widget .products-grid .product-item .product-item-inner, .page-layout-1column .block.widget .products-grid .product-item .product-item-inner, .page-layout-3columns .block.widget .products-grid .product-item .product-item-inner {
         position: relative;
         top: -18px;
-        border: none;
+        border: @border-none;
         box-shadow: none;
         width: auto;
         height: auto;
@@ -659,7 +659,7 @@
     .products-grid .product-item-info:hover,
     .products-grid .product-item-info.active {
         box-shadow: none;
-        border: none;
+        border: @border-none;
         margin: 0;
         padding: 0;
         position: relative;
@@ -676,7 +676,7 @@
         padding: 0;
         width: 200px;
         height: 32px;
-        background: #ff8126;
+        background: @primary-color;
     }
 
     .article, aside, details, figcaption, figure, main, footer, header, nav, section, summary {
@@ -685,13 +685,13 @@
     }
 
     .product-item .tocart {
-        border: none;
+        border: @border-none;
         width: 201px;
         text-align: center;
         height: 32px;
         margin-left: 0;
         box-shadow: none;
-        background: #ff8126;
+        background: @primary-color;
     }
 
     .columns:after {
@@ -706,7 +706,7 @@
         margin: 0;
         padding: 0;
         right: 0;
-        border: none;
+        border: @border-none;
         left: 0;
         position: relative;
     }
@@ -720,7 +720,7 @@
     .product-item-name {
         display: flex;
         margin-bottom: 50px;
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
         font-weight: 500;
         font-size: 21px;
         line-height: 27px;
@@ -761,7 +761,7 @@
 
     .cost_color {
         display: inline-block;
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
         font-weight: 600;
         font-size: 24px;
         line-height: 36px;
@@ -774,7 +774,7 @@
         color: gray;
         line-height: 36px;
         font-weight: 600;
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
         text-decoration: line-through;
     }
 
@@ -848,7 +848,7 @@
 
             .details {
                 position: absolute;
-                font-family: 'Cormorant', sans-serif;
+                font-family: @cormorant;
                 font-weight: bold;
                 color: #1f1f1f;
                 left: 55px;
@@ -860,7 +860,7 @@
                 }
 
                 h2 {
-                    font-family: 'Poppins', serif;
+                    font-family: @poppins;
                     font-weight: 300;
                     font-size: 26px;
                     line-height: 39px;
@@ -870,11 +870,11 @@
                 button {
                     width: 200px;
                     height: 45px;
-                    background: #ff8126;
+                    background: @primary-color;
                     border-radius: 5px;
                     color: white;
-                    border: none;
-                    font-family: 'Poppins', serif;
+                    border: @border-none;
+                    font-family: @poppins;
                     font-weight: 500;
                     font-size: 18px;
                     line-height: 27px;
@@ -904,12 +904,12 @@
             width: 100%;
 
             b {
-                color: #ff8126;
+                color: @primary-color;
             }
 
             h2 {
                 margin: 40px 0 80px 0;
-                font-family: 'Cormorant', sans-serif;
+                font-family: @cormorant;
                 font-weight: bold;
                 font-size: 30px;
                 line-height: 28px;
@@ -944,15 +944,15 @@
             margin: 0 40px 10px 0;
 
             h3 {
-                font-family: 'Cormorant', sans-serif;
+                font-family: @cormorant;
                 font-weight: bold;
                 font-size: 40px;
                 line-height: 48px;
-                color: #ff8126;
+                color: @primary-color;
             }
 
             p {
-                font-family: 'Poppins', serif;
+                font-family: @poppins;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;
@@ -967,10 +967,10 @@
             button {
                 width: 270px;
                 height: 45px;
-                background: #ff8126;
+                background: @primary-color;
                 border-radius: 5px;
                 color: white;
-                border: none;
+                border: @border-none;
                 margin-top: 30px;
                 font-family: "Popins", serif;
                 font-weight: 500;
@@ -980,7 +980,7 @@
         }
 
         .list li {
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: bold;
             font-size: 16px;
             line-height: 24px;
@@ -993,7 +993,7 @@
         .left > .list li:before {
             content: '\2714';
             padding: 7px 10px;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 50%;
             color: white;
             margin-right: 12px;
@@ -1019,7 +1019,7 @@
             background: url('@{baseDir}images/bg-our-partner.png') no-repeat;
 
             h2 {
-                font-family: 'Cormorant', sans-serif;
+                font-family: @cormorant;
                 font-weight: bold;
                 font-size: 30px;
                 line-height: 1;
@@ -1033,9 +1033,9 @@
                 margin-bottom: 0;
                 font-size: 11px;
                 line-height: 0;
-                background: #ff8126;
+                background: @primary-color;
                 color: white;
-                border: none;
+                border: @border-none;
             }
         }
 
@@ -1057,24 +1057,24 @@
             margin: 80px 0 80px 0;
 
             a {
-                font-family: 'Cormorant', sans-serif;
+                font-family: @cormorant;
                 font-weight: bold;
                 font-size: 20px;
                 line-height: 28px;
                 text-align: center;
                 text-decoration-line: underline;
-                color: #ff8126;
+                color: @primary-color;
             }
 
             h2 {
-                font-family: 'Cormorant', sans-serif;
+                font-family: @cormorant;
                 font-weight: bold;
                 font-size: 20px;
                 line-height: 28px;
             }
 
             i {
-                font-family: 'Cormorant', sans-serif;
+                font-family: @cormorant;
                 font-weight: bold;
                 font-size: 20px;
                 line-height: 28px;
@@ -1157,7 +1157,7 @@
             }
 
             h2 {
-                font-family: 'Cormorant', sans-serif;
+                font-family: @cormorant;
                 font-weight: bold;
                 font-size: 40px;
                 line-height: 48px;
@@ -1165,18 +1165,18 @@
             }
 
             h3 {
-                font-family: 'Cormorant', sans-serif;
+                font-family: @cormorant;
                 font-weight: bold;
                 font-size: 40px;
                 line-height: 48px;
-                color: #ff8126;
+                color: @primary-color;
             }
 
             p {
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;
-                font-family: 'Poppins', serif;
+                font-family: @poppins;
                 color: #1f1f1f;
                 margin: 40px 0 20px 0;
                 flex-wrap: wrap;
@@ -1186,24 +1186,24 @@
             button {
                 width: 140px;
                 height: 45px;
-                background: #ff8126;
+                background: @primary-color;
                 border-radius: 5px;
-                font-family: 'Poppins', serif;
+                font-family: @poppins;
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 27px;
                 color: white;
-                border: none;
+                border: @border-none;
                 margin-top: 30px;
             }
 
             pre {
                 color: black;
-                font-family: 'Cormorant', sans-serif;
+                font-family: @cormorant;
                 font-weight: bold;
                 font-size: 40px;
                 line-height: 48px;
-                border: none;
+                border: @border-none;
                 background: none;
             }
         }
@@ -1231,7 +1231,7 @@
             }
 
             h4 {
-                font-family: 'Cormorant', sans-serif;
+                font-family: @cormorant;
                 font-weight: bold;
                 font-size: 40px;
                 line-height: 48px;
@@ -1332,7 +1332,7 @@
         .abs-margin-for-blocks-and-widgets-desktop, .page-main .block, .customer-review .product-details {
             display: block;
             margin: 120px 0 50px 0;
-            border: none;
+            border: @border-none;
         }
 
         .abs-visually-hidden-desktop-s, .products-grid .product-item-info:not(:hover):not(.active) .product-item-inner {
@@ -1368,7 +1368,7 @@
             width: 270px;
             border-radius: 20px;
             max-width: none;
-            border: none;
+            border: @border-none;
             margin: 0;
             padding: 0;
             clip-path: none;
@@ -1377,7 +1377,7 @@
         }
 
         .products-grid .product-item-info:hover {
-            border: none;
+            border: @border-none;
             clip-path: none;
             display: block;
             position: relative;
@@ -1411,7 +1411,7 @@
         .block.widget .products-grid .product-item .product-item-inner, .page-layout-1column .block.widget .products-grid .product-item .product-item-inner, .page-layout-3columns .block.widget .products-grid .product-item .product-item-inner {
             position: relative;
             top: -18px;
-            border: none;
+            border: @border-none;
             box-shadow: none;
             width: auto;
             height: auto;
@@ -1420,7 +1420,7 @@
         .products-grid .product-item-info:hover,
         .products-grid .product-item-info.active {
             box-shadow: none;
-            border: none;
+            border: @border-none;
             margin: 0;
             padding: 0;
             position: relative;
@@ -1437,7 +1437,7 @@
             padding: 0;
             width: 200px;
             height: 32px;
-            background: #ff8126;
+            background: @primary-color;
         }
 
         article, aside, details, figcaption, figure, main, footer, header, nav, section, summary {
@@ -1446,13 +1446,13 @@
         }
 
         .product-item .tocart {
-            border: none;
+            border: @border-none;
             width: 201px;
             text-align: center;
             height: 32px;
             margin-left: 0;
             box-shadow: none;
-            background: #ff8126;
+            background: @primary-color;
         }
 
         .product-item-actions .actions-primary + .actions-secondary {
@@ -1463,7 +1463,7 @@
             margin: 0;
             padding: 0;
             right: 0;
-            border: none;
+            border: @border-none;
             left: 0;
             position: relative;
         }
@@ -1476,7 +1476,7 @@
         .product-item-name {
             display: flex;
             margin-bottom: 50px;
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: 500;
             font-size: 21px;
             line-height: 27px;
@@ -1517,7 +1517,7 @@
 
         .cost_color {
             display: inline-block;
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: 600;
             font-size: 24px;
             line-height: 36px;
@@ -1530,7 +1530,7 @@
             color: gray;
             line-height: 36px;
             font-weight: 600;
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             text-decoration: line-through;
         }
 
@@ -1682,10 +1682,10 @@
             button {
                 width: 110px;
                 height: 28px;
-                background: #ff8126;
+                background: @primary-color;
                 border-radius: 5px;
                 color: white;
-                border: none;
+                border: @border-none;
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 0;
@@ -1700,7 +1700,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border: none;
+        border: @border-none;
     }
 
     .inf-section {
@@ -1729,7 +1729,7 @@
         align-items: center;
 
         h2 {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 17px;
             line-height: 26px;
@@ -1743,10 +1743,10 @@
             margin-bottom: 28px;
             font-size: 13px;
             line-height: 0;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 5px;
-            border: none;
-            font-family: 'Poppins', serif;
+            border: @border-none;
+            font-family: @poppins;
             color: #ffffff;
         }
     }
@@ -1787,15 +1787,15 @@
         margin: 0;
 
         h3 {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 23px;
             line-height: 48px;
-            color: #ff8126;
+            color: @primary-color;
         }
 
         p {
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: 600;
             font-size: 16px;
             line-height: 24px;
@@ -1810,10 +1810,10 @@
         button {
             width: 210px;
             height: 35px;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 5px;
             color: white;
-            border: none;
+            border: @border-none;
             margin: 16px 14%;
             font-family: "Popins",serif;
             font-weight: 500;
@@ -1838,7 +1838,7 @@
     .abs-margin-for-blocks-and-widgets-desktop, .page-main .block, .customer-review .product-details {
         display: block;
         margin: 120px 0 50px 0;
-        border: none;
+        border: @border-none;
     }
 
     .page-layout-1column .block.widget .products-grid .product-item:nth-child(4n + 1) {
@@ -1870,7 +1870,7 @@
     }
 
     .list li {
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
         font-weight: bold;
         font-size: 16px;
         line-height: 24px;
@@ -1887,7 +1887,7 @@
 
     .left > .list li:before {
         content: '\2714';
-        background: #ff8126;
+        background: @primary-color;
         border-radius: 50%;
         color: white;
         margin-right: 12px;
@@ -1922,7 +1922,7 @@
         }
 
         h4 {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 26px;
             color: #1f1f1f;
@@ -1940,14 +1940,14 @@
 
         a {
             font-size: 20px;
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             text-decoration-line: underline;
-            color: #ff8126;
+            color: @primary-color;
         }
 
         i {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 20px;
             color: black;
@@ -1967,24 +1967,24 @@
         }
 
         h3 {
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 28px;
-            color: #ff8126;
+            color: @primary-color;
             margin-top: 60px;
         }
 
         pre {
             color: black;
-            font-family: 'Cormorant', sans-serif;
+            font-family: @cormorant;
             font-weight: bold;
             font-size: 23px;
-            border: none;
+            border: @border-none;
             background: none;
         }
 
         p {
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             line-height: 24px;
             width: 247px;
             margin: 7px;
@@ -1994,14 +1994,14 @@
         button {
             width: 120px;
             height: 27px;
-            background: #ff8126;
+            background: @primary-color;
             border-radius: 5px;
-            font-family: 'Poppins', serif;
+            font-family: @poppins;
             font-weight: 600;
             font-size: 15px;
             line-height: 0;
             color: white;
-            border: none;
+            border: @border-none;
             margin-top: 30px;
         }
     }
@@ -2159,7 +2159,7 @@
         width: 270px;
         border-radius: 20px;
         max-width: none;
-        border: none;
+        border: @border-none;
         margin: 0;
         padding: 0;
         clip-path: none;
@@ -2170,7 +2170,7 @@
 
 
     .products-grid .product-item-info:hover {
-        border: none;
+        border: @border-none;
         clip-path: none;
         display: block;
         position: relative;
@@ -2213,7 +2213,7 @@
     .products-grid .product-item-info:hover,
     .products-grid .product-item-info.active {
         box-shadow: none;
-        border: none;
+        border: @border-none;
         margin: 0;
         padding: 0;
         position: relative;
@@ -2230,7 +2230,7 @@
         padding: 0;
         width: 200px;
         height: 32px;
-        background: #ff8126;
+        background: @primary-color;
     }
 
     .article, aside, details, figcaption, figure, main, footer, header, nav, section, summary {
@@ -2239,13 +2239,13 @@
     }
 
     .product-item .tocart {
-        border: none;
+        border: @border-none;
         width: 201px;
         text-align: center;
         height: 32px;
         margin-left: 0;
         box-shadow: none;
-        background: #ff8126;
+        background: @primary-color;
     }
 
     .columns:after {
@@ -2260,7 +2260,7 @@
         margin: 0;
         padding: 0;
         right: 0;
-        border: none;
+        border: @border-none;
         left: 0;
         position: relative;
     }
@@ -2274,7 +2274,7 @@
     .product-item-name {
         display: flex;
         margin-bottom: 50px;
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
         font-weight: 500;
         font-size: 21px;
         line-height: 27px;
@@ -2315,7 +2315,7 @@
 
     .cost_color {
         display: inline-block;
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
         font-weight: 600;
         font-size: 24px;
         line-height: 36px;
@@ -2328,7 +2328,7 @@
         color: gray;
         line-height: 36px;
         font-weight: 600;
-        font-family: 'Poppins', serif;
+        font-family: @poppins;
         text-decoration: line-through;
     }
 

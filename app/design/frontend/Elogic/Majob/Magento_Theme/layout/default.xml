@@ -16,10 +16,6 @@
         <referenceContainer name="header.panel">
             <block class="Magento\Framework\View\Element\Template" name="top" template="Magento_Theme::header.phtml"/>
             <block class="Magento\Framework\View\Element\Template" name="img" template="Magento_Theme::image.phtml"/>
-            <referenceBlock name="panel.wrapper" remove="false"/>
-            <referenceBlock name="panel.header" remove="false"/>
-            <referenceBlock name="header.links" remove="false"/>
-            <referenceBlock name="top.search" remove="true"/>
         </referenceContainer>
 
         <referenceContainer name="header-wrapper">
@@ -27,15 +23,18 @@
                    template="Magento_Theme::header_content.phtml"/>
         </referenceContainer>
 
-        <referenceBlock name="form.subscribe" remove="true"/>
-        <referenceBlock name="footer" remove="false"/>
-
         <referenceContainer name="footer-container">
             <block class="Magento\Framework\View\Element\Template" name="footer_content"
                    template="Magento_Theme::footer.phtml"/>
         </referenceContainer>
 
+        <referenceBlock name="panel.wrapper" remove="false"/>
+        <referenceBlock name="panel.header" remove="false"/>
+        <referenceBlock name="header.links" remove="false"/>
+        <referenceBlock name="top.search" remove="true"/>
+        <referenceBlock name="form.subscribe" remove="true"/>
         <referenceBlock name="footer_links" remove="true"/>
+        <referenceBlock name="footer" remove="false"/>
         <referenceBlock name="copyright" remove="true"/>
 
     </body>

@@ -21,7 +21,10 @@ class UpdateDefaultTheme implements DataPatchInterface, PatchRevertableInterface
     protected WriterInterface $writer;
 
 
-    public function __construct(WriterInterface $writer, CollectionFactory $collectionFactory, ModuleDataSetupInterface $moduleDataSetup, IndexerFactory $indexerFactory)
+    public function __construct(WriterInterface $writer,
+                                CollectionFactory $collectionFactory,
+                                ModuleDataSetupInterface $moduleDataSetup,
+                                IndexerFactory $indexerFactory)
     {
         $this->writer = $writer;
         $this->collectionFactory = $collectionFactory;

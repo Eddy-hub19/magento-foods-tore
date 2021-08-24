@@ -7,7 +7,6 @@
             <block class="Magento\Framework\View\Element\Template" name="page_content"
                    template="Magento_Theme::page.phtml" after="main"/>
         </referenceContainer>
-
         <!--MAIN.CONTAINER-->
         <referenceContainer name="page.bottom.container">
             <container name="custom.container" as="CustomContainer" label="Custom Container" htmlTag="div"
